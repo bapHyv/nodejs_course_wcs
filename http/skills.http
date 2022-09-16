@@ -1,0 +1,29 @@
+POST http://localhost:5000/api/skill
+Content-Type: application/json
+
+{
+    "name": "Python"
+}
+
+###
+
+GET http://localhost:5000/api/skill
+
+###
+
+PUT http://localhost:5000/api/skill
+Content-Type: application/json
+
+{
+    "id": 4,
+    "name": "C++"
+}
+
+###
+
+DELETE http://localhost:5000/api/skill
+Content-Type: application/json
+
+{
+    "id": 4
+}

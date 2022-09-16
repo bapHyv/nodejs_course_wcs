@@ -1,0 +1,64 @@
+POST http://localhost:5000/api/wilder
+Content-Type: application/json
+
+{
+    "name": "Dung Phi"
+}
+
+###
+
+GET http://localhost:5000/api/wilder
+
+###
+
+PUT http://localhost:5000/api/wilder
+Content-Type: application/json
+
+{
+    "id": 7,
+    "name": "Willy Wonka"
+}
+
+###
+
+DELETE http://localhost:5000/api/wilder
+Content-Type: application/json
+
+{
+    "id": 28
+}
+
+###
+
+GET http://localhost:5000/nexistepas
+
+###
+
+PUT http://localhost:5000/api/wilder/addSkill
+Content-Type: application/json
+
+{
+    "wilderId": 10,
+    "skillName": "PHP"
+}
+
+###
+
+PUT http://localhost:5000/api/wilder/addDescription
+Content-Type: application/json
+
+{
+    "wilderId": 9,
+    "description": "I am the cool Jane Doe"
+}
+
+###
+
+PUT http://localhost:5000/api/wilder/addRateToSkill
+Content-Type: application/json
+
+{
+    "wilderId": 4,
+    "skillName": "C#",
+    "rate": 7
+}
